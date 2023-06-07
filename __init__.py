@@ -1,4 +1,3 @@
-import pygame
 from pygame import *
 
 from ping_pong.game_sprite import GameSprite
@@ -98,4 +97,4 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-    pygame.quit()
+    quit()
