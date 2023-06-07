@@ -1,8 +1,8 @@
 import base64
 from pathlib import Path
-from pygame import image
+# from pygame import image
 
-from ping_pong.conf import BALL_PATH, RACKET_PATH
+from conf import BALL_PATH, RACKET_PATH
 
 
 def img_to_str(img: Path, store_name: str) -> None:

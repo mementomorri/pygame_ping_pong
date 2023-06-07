@@ -1,11 +1,10 @@
-from pygame import transform, image, Surface
-from pygame._sprite import Sprite
-from ping_pong.type_hints import *
+from pygame import transform, image, Surface, sprite
 import base64
 from io import BytesIO
 from PIL import Image
 
-from ping_pong.window_interface import window
+from type_hints import *
+from window_interface import window
 
 
 def pil_image_to_surface(pil_image: Image) -> Surface:
@@ -13,7 +12,7 @@ def pil_image_to_surface(pil_image: Image) -> Surface:
         pil_image.tobytes(), pil_image.size, pil_image.mode)
 
 
-class GameSprite(Sprite):
+class GameSprite(sprite.Sprite):
     def __init__(self, picture_bytestring: str, sprite_position: SpriteCoordinates,
                  movement_velocity: int, sprite_size: SpriteSize) -> None:
         """

@@ -1,7 +1,7 @@
 from pygame import key, K_UP, K_DOWN, K_w, K_s
 
-from ping_pong.game_sprite import GameSprite
-from ping_pong.conf import WINDOW_HEIGHT, RACKET_HEIGHT, UPPER_WINDOW_MARGIN
+from game_sprite import GameSprite
+from conf import WINDOW_HEIGHT, RACKET_HEIGHT, UPPER_WINDOW_MARGIN
 
 
 class Racket(GameSprite):
