@@ -18,7 +18,7 @@ def img_to_str(img: Path, store_name: str) -> None:
         f.write(content)
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # generate bstring when necessary with this entry point
     img_to_str(Path('../'+BALL_PATH), 'ball')
     img_to_str(Path('../'+RACKET_PATH), 'racket')
 

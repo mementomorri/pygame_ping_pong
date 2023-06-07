@@ -8,6 +8,11 @@ from window_interface import window
 
 
 def pil_image_to_surface(pil_image: Image) -> Surface:
+    """
+    Convenient function to process bstring and transform it to Image.
+    :param pil_image: image of game sprite
+    :return: surface to draw
+    """
     return image.fromstring(
         pil_image.tobytes(), pil_image.size, pil_image.mode)
 
